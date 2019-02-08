@@ -36,28 +36,28 @@ body{
     text-align: center;
 }
 #controlls button{
-    opacity:0.7;
+    opacity:1;
     height: 50px;
     width:120px;
     margin: 0 auto;
     transition: all 500ms ease-in-out;
 }
 #controlls button:hover{
-    opacity:1;
     width:120px;
     margin: 0 auto;
+    border: 2px solid black;
 }
 #controlls button:nth-child(1){
     color:white;
     background: crimson;
     outline: none;
-    border:none;
+    /* border:none; */
 }
 #controlls button:nth-child(2){
     color:crimson;
     background: white;
     outline: none;
-    border:none;
+    /* border:none; */
 }
 #dmg{
     background:rgba(255, 255, 255, 0.7);
