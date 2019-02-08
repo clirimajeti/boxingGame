@@ -1,0 +1,72 @@
+body{
+    height: 90vh;
+    background-image:url(./img/ring.jpg);
+    background-position: 50% 60%;
+    background-size: cover;
+}
+#bag{
+    width:200px;
+    height: 380px;
+    margin: 0 auto;
+    background: url(./img/bag.png) center no-repeat;
+    background-size: 80%; 
+}
+#bag.burst{
+    background: url(./img/bag-burst.png) center no-repeat;
+    background-size: 80%; 
+}
+#bag-health{
+    width: 200px;
+    border: 2px solid black;
+    margin: 5px auto 20px auto;
+}
+
+#bag-health div{
+    height: 20px;
+    background: crimson; 
+}
+#bag-health div.end{
+    opacity:0;
+}
+#controlls{
+    background: rgba(0, 0, 0, 0.3);
+    padding:10px; 
+    width:300px;
+    margin: 0 auto;
+    text-align: center;
+}
+#controlls button{
+    opacity:0.7;
+    height: 50px;
+    width:120px;
+    margin: 0 auto;
+    transition: all 500ms ease-in-out;
+}
+#controlls button:hover{
+    opacity:1;
+    width:120px;
+    margin: 0 auto;
+}
+#controlls button:nth-child(1){
+    color:white;
+    background: crimson;
+    outline: none;
+    border:none;
+}
+#controlls button:nth-child(2){
+    color:crimson;
+    background: white;
+    outline: none;
+    border:none;
+}
+#dmg{
+    background:rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    color:crimson;
+    text-align: center;
+}
+#count{
+    background:rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    text-align: center;
+}
