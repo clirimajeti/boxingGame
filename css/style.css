@@ -1,0 +1,22 @@
+body{height:100vh;background-image:url(../img/ring.jpg);background-position:50% 60%;background-size:cover;font-family:'Covered By Your Grace',cursive!important;box-sizing:border-box}
+#bag{width:200px;height:380px;margin:0 auto;background:url(../img/bag.png) center no-repeat;background-size:80%}
+#bag.burst{background:url(../img/bag-burst.png) center no-repeat;background-size:80%}
+#bag-health{width:200px;border:2px solid #000;margin:5px auto 20px auto}
+#bag-health div{height:20px;background:#dc143c}
+#bag-health div.end{opacity:0}
+#controlls{background:rgba(0,0,0,.3);padding:10px;width:300px;margin:0 auto;text-align:center}
+#controlls button{opacity:1;height:50px;width:120px;margin:0 auto;transition:all .5s ease-in-out}
+#controlls button:disabled{opacity:.7}
+#controlls button:hover{width:120px;margin:0 auto;border:2px solid #000}
+#controlls button:nth-child(1){color:#fff;background:#dc143c;outline:0}
+#controlls button:nth-child(2){color:#dc143c;background:#fff;outline:0}
+#dmg{font-size:28px;background:rgba(255,255,255,.7);border-top-left-radius:5px;border-bottom-left-radius:5px;border-right:4px solid #333;color:#dc143c;padding-left:3%;padding-right:3%;padding-top:.625em;padding-bottom:.625em}
+#count{font-size:28px;background:rgba(255,255,255,.7);border-right:4px solid #333;padding-left:3%;padding-right:3%;padding-top:.625em;padding-bottom:.625em}
+#time{font-size:28px;background:rgba(255,255,255,.7);border-top-right-radius:5px;border-bottom-right-radius:5px;padding-left:3%;padding-right:3%;padding-top:.625em;padding-bottom:.625em}
+.details{font-size:1.5em;padding-bottom:.625em;width:100%;text-align:center}
+.highscore_table{border-radius:15px;margin-top:10%;background-color:#333}
+.highscore_table h1{text-align:center;color:#f4f4f4;padding:0;margin:0}
+table,td,thead,tr{color:#f4f4f4;font-size:18px}
+.tr-score{background-color:rgba(200,200,200,.1)}
+.submit_score{font-size:18px;width:100%;height:32px;padding-left:20px}
+[v-cloak]{opacity:0}
