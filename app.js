@@ -7,9 +7,14 @@ new Vue({
         count: 0,
         time: 0,
         interval: null,
-        start: false
+        start: false,
+        score:null,
+        highscore:[]
     },
     methods:{
+        pushHighscore: function(a,b){
+           return {"time":a/10,"punches":b}
+        },
         punch: function(){
             if(this.start == false){
                 this.toggleTimer();
@@ -22,6 +27,8 @@ new Vue({
                 this.ended = true;
                 this.start = true;
                 clearInterval(this.interval);
+                this.score = this.pushHighscore(this.time,this.count);
+                this.highscore.push(this.score);
             }
         },
         restart: function(){
