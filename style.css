@@ -110,5 +110,8 @@ table,tr,td, thead{
 .submit_score{
     width:100%;padding-left:20px;
 }
+[v-cloak] {
+    opacity: 0;
+  }
 
 
