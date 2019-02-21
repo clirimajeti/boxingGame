@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Box Game</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+    
 </head>
 <body>
     <div id="vue-app">
@@ -20,13 +21,14 @@
         <div class="details">
             <span id="dmg">{{ dmg + ' dmg' }} </span>
             <span id="count"> {{ count + " punches"}} </span>
-            <span id="time">{{ time/10 + "s" }}</span>
+            <span id="time">{{ time/10 + " s" }}</span>
         </div>
         <div id="controlls">
             <button v-on:click="punch" v-bind:disabled="ended">Punch</button>
             <button v-on:click="restart">Restart</button>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>

@@ -1,8 +1,10 @@
 body{
-    height: 90vh;
+    height: 100vh;
     background-image:url(./img/ring.jpg);
     background-position: 50% 60%;
     background-size: cover;
+    font-family: 'Covered By Your Grace', cursive;
+    box-sizing: border-box;
 }
 #bag{
     width:200px;
@@ -63,36 +65,39 @@ body{
     /* border:none; */
 }
 #dmg{
+    font-size:28px;
     background:rgba(255, 255, 255, 0.7);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right:4px solid #333;
     color:crimson;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top:0.625em;
+    padding-bottom: 0.625em; 
 }
 #count{
+    font-size:28px;
     background:rgba(255, 255, 255, 0.7);
     border-right:4px solid #333;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
 }
 #time{
+    font-size:28px;
     background:rgba(255, 255, 255, 0.7);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top:0.625em;
+    padding-bottom: 0.625em; 
 }
 .details{
-    font-size:24px;
-    padding-bottom: 10px;
+    font-size:1.5000em;
+    padding-bottom: 0.625em;
     width:100%;
     text-align: center;
 }
