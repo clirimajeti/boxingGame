@@ -3,7 +3,7 @@ body{
     background-image:url(./img/ring.jpg);
     background-position: 50% 60%;
     background-size: cover;
-    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Covered By Your Grace', cursive !important;
     box-sizing: border-box;
 }
 #bag{
@@ -103,5 +103,8 @@ body{
 }
 .highscore_table{
     padding-top:10%;
+}
+table,tr,td, thead{
+    font-size:18px; 
 }
 
