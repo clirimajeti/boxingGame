@@ -9,11 +9,19 @@ new Vue({
         interval: null,
         start: false,
         score:null,
+        score_name:"",
         highscore:[]
     },
+    mixins: [Vue2Filters.mixin],
     methods:{
-        pushHighscore: function(a,b){
-           return {"time":a/10,"punches":b}
+        pushHighscore: function(a,b,c){
+           return {"name":a,"time":b/10,"punches":c}
+        },
+        submitScore: function(){
+            this.score = this.pushHighscore(this.score_name,this.time,this.count);
+            this.highscore.push(this.score);  
+            this.restart();
+            this.score_name = "";
         },
         punch: function(){
             if(this.start == false){
@@ -27,8 +35,6 @@ new Vue({
                 this.ended = true;
                 this.start = true;
                 clearInterval(this.interval);
-                this.score = this.pushHighscore(this.time,this.count);
-                this.highscore.push(this.score);
             }
         },
         restart: function(){

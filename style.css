@@ -45,7 +45,7 @@ body{
     transition: all 500ms ease-in-out;
 }
 #controlls button:disabled{
-    opacity: 0.2;
+    opacity: 0.7;
 }
 #controlls button:hover{
     width:120px;
@@ -107,4 +107,8 @@ body{
 table,tr,td, thead{
     font-size:18px; 
 }
+.submit_score{
+    width:100%;padding-left:20px;
+}
+
 

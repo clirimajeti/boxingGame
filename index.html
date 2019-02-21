@@ -16,16 +16,18 @@
                 <div id="bag" v-bind:class="{burst:ended}"></div>
 
                 <div id="bag-health">
-                    <div v-bind:style="{width:health +'%'}" v-bind:class="{end:ended}"></div>
+                    <div v-bind:style="{width:health +'%'}" v-if="!ended"></div>
+                    <input v-else type="text" class="submit_score" v-model="score_name" placeholder="Submit your score" required>
                 </div>
         
                 <div class="details">
-                    <span id="dmg">{{ dmg + ' dmg' }} </span>
+                    <span id="dmg">{{ dmg == 0 ? 'miss' :dmg + ' dmg' }} </span>
                     <span id="count"> {{ count + " hits"}} </span>
                     <span id="time">{{ time/10 + " s" }}</span>
                 </div>
                 <div id="controlls">
-                    <button v-on:click="punch" v-bind:disabled="ended">Punch</button>
+                    <button v-if="!ended" v-on:click="punch">Punch</button>
+                    <button v-else v-on:click="submitScore" v-bind:disabled="!score_name">Submit your score</button>
                     <button v-on:click="restart">Restart</button>
                 </div>
             </div>
@@ -35,13 +37,15 @@
                     <thead>
                       <tr>
                         <th scope="col">#</th>
+                        <th class="text-center" scope="col">Name</th>
                         <th class="text-center" scope="col">Time</th>
                         <th class="text-center" scope="col">Hits</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="(score, index) in highscore" v-if="index<7">
+                      <tr v-for="(score, index) in orderBy(highscore, 'time')" v-if="index<7">
                         <th scope="row">{{ index + 1 }}</th>
+                        <td  class="text-center">{{score.name}}</td>
                         <td  class="text-center">{{score.time}} s</td>
                         <td  class="text-center">{{score.punches}}</td>
                       </tr>
@@ -57,6 +61,7 @@
       
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
