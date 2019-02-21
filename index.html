@@ -17,7 +17,7 @@
 
                 <div id="bag-health">
                     <div v-bind:style="{width:health +'%'}" v-if="!ended"></div>
-                    <input v-else type="text" class="submit_score" v-model="score_name" placeholder="Submit your score" required>
+                    <input v-else type="text" class="submit_score" v-model="score_name" placeholder="Submit your score" required v-on:keyup.enter="submitScore">
                 </div>
         
                 <div class="details">
