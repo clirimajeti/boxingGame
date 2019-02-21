@@ -17,15 +17,13 @@
             <div v-bind:style="{width:health +'%'}" v-bind:class="{end:ended}"></div>
         </div>
 
-        <div style="width: 50%;margin: 0 auto;">
-            <h1 id="dmg">{{ dmg + ' dmg' }} </h1>
-        </div>
-
-        <div style="width: 50%;margin: 0 auto;">
-            <h2 id="count"> {{ count + " punches"}} </h2>
+        <div class="details">
+            <span id="dmg">{{ dmg + ' dmg' }} </span>
+            <span id="count"> {{ count + " punches"}} </span>
+            <span id="time">{{ time/10 + "s" }}</span>
         </div>
         <div id="controlls">
-            <button v-on:click="punch" v-show="!ended">Punch</button>
+            <button v-on:click="punch" v-bind:disabled="ended">Punch</button>
             <button v-on:click="restart">Restart</button>
         </div>
     </div>

@@ -42,6 +42,9 @@ body{
     margin: 0 auto;
     transition: all 500ms ease-in-out;
 }
+#controlls button:disabled{
+    opacity: 0.2;
+}
 #controlls button:hover{
     width:120px;
     margin: 0 auto;
@@ -61,12 +64,35 @@ body{
 }
 #dmg{
     background:rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right:4px solid #333;
     color:crimson;
-    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #count{
     background:rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
+    border-right:4px solid #333;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#time{
+    background:rgba(255, 255, 255, 0.7);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+.details{
+    font-size:24px;
+    padding-bottom: 10px;
+    width:100%;
     text-align: center;
 }
