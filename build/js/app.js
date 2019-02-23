@@ -28,7 +28,7 @@ new Vue({
                 this.toggleTimer();
                 this.start = true;
             }
-            this.dmg = Math.floor(Math.random() * 11);
+            this.dmg = Math.floor(Math.random() * 6);
             this.health -= this.dmg;
             this.count++;
             if(this.health <= 0){
