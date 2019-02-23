@@ -1,9 +1,4 @@
 body{height:100vh;background-image:url(../images/ring.jpg);background-position:50% 60%;background-size:cover;background-repeat: no-repeat; background-attachment: fixed; font-family:'Covered By Your Grace',cursive!important;box-sizing:border-box;background-color: #333!important;}
-@media only screen and (max-width: 420px) {
-    body {
-      /* background-image:none; */
-    }
-  }
 #bag{width:200px;height:380px;margin:0 auto;background:url(../images/bag.png) center no-repeat;background-size:80%}
 #bag.burst{background:url(../images/bag-burst.png) center no-repeat;background-size:80%}
 #bag-health{width:200px;border:2px solid #000;margin:5px auto 20px auto}
@@ -24,4 +19,18 @@ body{height:100vh;background-image:url(../images/ring.jpg);background-position:5
 table,td,thead,tr{color:#f4f4f4;font-size:18px}
 .tr-score{background-color:rgba(200,200,200,.1)}
 .submit_score{font-size:18px;width:100%;height:32px;padding-left:20px}
+#punch{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding-top:55px;
+  padding-left:55px;
+  padding-right:55px;
+  font-size:32px;
+}
+#punch:focus{
+  outline: none;
+  border: none;
+}
 [v-cloak]{opacity:0}
