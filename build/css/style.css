@@ -24,10 +24,11 @@ table,td,thead,tr{color:#f4f4f4;font-size:18px}
   width: 100%;
   background-color: transparent;
   border: none;
-  padding-top:55px;
+  padding-top:65px;
   padding-left:55px;
   padding-right:55px;
   font-size:32px;
+  color:white;
 }
 #punch:focus{
   outline: none;
