@@ -5,7 +5,7 @@
   "background_color": "#6ab4ee",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "https://clirimajeti.github.io/boxingGame/",
+  "start_url": "https://clirimajeti.github.io/boxingGame/build/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
