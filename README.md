@@ -1,4 +1,5 @@
 # boxingGame
-a little boxing game, how many punches ?
+a little boxing game, how many hits in how many seconds?
+You can add this game to your mobile homescreen, and it works also offline.
 
-This game is created with VueJS.
+For this game I used VueJs Framework and Workbox-Cli( for the Service Worker)
