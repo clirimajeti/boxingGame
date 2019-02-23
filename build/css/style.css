@@ -1,4 +1,4 @@
-body{height:100vh;background-image:url(../images/ring.jpg);background-position:50% 60%;background-size:cover;font-family:'Covered By Your Grace',cursive!important;box-sizing:border-box}
+body{height:100vh;background-image:url(../images/ring.jpg);background-position:50% 60%;background-size:cover;background-repeat: no-repeat;font-family:'Covered By Your Grace',cursive!important;box-sizing:border-box;background-color: #333!important;}
 #bag{width:200px;height:380px;margin:0 auto;background:url(../images/bag.png) center no-repeat;background-size:80%}
 #bag.burst{background:url(../images/bag-burst.png) center no-repeat;background-size:80%}
 #bag-health{width:200px;border:2px solid #000;margin:5px auto 20px auto}

@@ -2,7 +2,7 @@
   "name": "Box-Game",
   "short_name": "Box-Game",
   "theme_color": "#dc143c",
-  "background_color": "#6ab4ee",
+  "background_color": "#333",
   "display": "standalone",
   "Scope": "/",
   "start_url": "https://clirimajeti.github.io/boxingGame/build/index.html",
