@@ -45,6 +45,7 @@ new Vue({
             
         },
         punch: function(){
+          console.log(this.highscore);
             if(this.start == false){
                 this.toggleTimer();
                 this.start = true;
@@ -74,11 +75,16 @@ new Vue({
             this.time = parseInt(this.time) + 1;
           },
         getData: function(){
-            let vm = this.highscore;
-            
+            let vm = this;
             db.collection("highscore").onSnapshot((querySnapshot)=>{
-                // vm = [];
-                querySnapshot.forEach((doc)=>{vm.push(doc.data());});
+                // vm = []; pse e ke barazu me highscore qaty, se n javascript nese eshte anynoms nested nuk mun e thret 
+                //ku ja ke gjujt qeta vm mansnej qesaj highscore
+                // GOOD  question, qishtu u kan n fillim sdi pse e kom ba qashtu tani
+                //a osht e git qeshtu, le qeshtu nese osht e njojt si demo
+                //
+                querySnapshot.forEach((doc)=>{
+                  vm.highscore.push(doc.data()); //
+                });
               })
               
         }
