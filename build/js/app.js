@@ -77,13 +77,9 @@ new Vue({
         getData: function(){
             let vm = this;
             db.collection("highscore").onSnapshot((querySnapshot)=>{
-                // vm = []; pse e ke barazu me highscore qaty, se n javascript nese eshte anynoms nested nuk mun e thret 
-                //ku ja ke gjujt qeta vm mansnej qesaj highscore
-                // GOOD  question, qishtu u kan n fillim sdi pse e kom ba qashtu tani
-                //a osht e git qeshtu, le qeshtu nese osht e njojt si demo
-                //
+               vm.highscore = [];
                 querySnapshot.forEach((doc)=>{
-                  vm.highscore.push(doc.data()); //
+                  vm.highscore.push(doc.data());
                 });
               })
               
