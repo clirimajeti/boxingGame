@@ -36,7 +36,7 @@ new Vue({
             db.collection("highscore").add({
                 "_id":this.id,
                 "name":this.score_name,
-                "time":this.time,
+                "time":this.time / 10,
                 "punches":this.count
             });
 
