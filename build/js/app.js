@@ -66,7 +66,6 @@ new Vue({
             this.time = 0;
             this.start = false;
             this.score_name = "";
-            console.log(this.uniqueScore);
         },
         toggleTimer: function() {  
               this.interval = setInterval(this.incrementTime, 100);
@@ -76,7 +75,9 @@ new Vue({
           },
         getData: function(){
             let vm = this.highscore;
+            
             db.collection("highscore").onSnapshot((querySnapshot)=>{
+                // vm = [];
                 querySnapshot.forEach((doc)=>{vm.push(doc.data());});
               })
               
