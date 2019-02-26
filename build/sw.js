@@ -34,7 +34,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "css/style.css",
-    "revision": "f973f30d83fca20e59c3c46d9a217876"
+    "revision": "838d4b3a09a33f66fc4fcf90013a8000"
   },
   {
     "url": "images/bag-burst.png",
@@ -46,51 +46,51 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "images/icons/icon-128x128.png",
-    "revision": "e9099eb8dabeba70905c1b3a02ca67ae"
+    "revision": "d6c5d1446109eca1613c415f462b1457"
   },
   {
     "url": "images/icons/icon-144x144.png",
-    "revision": "2ac1a651bb2a7884ab9daccabedf7ae5"
+    "revision": "7e3b99470da314d7207b0b3b101a60a2"
   },
   {
     "url": "images/icons/icon-152x152.png",
-    "revision": "004202a6d5a23c8140d7a360cb55c9fc"
+    "revision": "7d413cec92f2a4819ade5b998116e8b9"
   },
   {
     "url": "images/icons/icon-192x192.png",
-    "revision": "9c12c54978c4955145c8bd192b58aee4"
+    "revision": "ece9bd432cb282e24c31b9dbffe29571"
   },
   {
     "url": "images/icons/icon-384x384.png",
-    "revision": "2252c3af2519eadf22bbe5d2e103131e"
+    "revision": "b1ca68e226a5038b21c874d6980f04f6"
   },
   {
     "url": "images/icons/icon-512x512.png",
-    "revision": "a2608978a0a364c79f12a86598279f11"
+    "revision": "b5ef65364e535e14e9be3f4447488dec"
   },
   {
     "url": "images/icons/icon-72x72.png",
-    "revision": "619fc6acdcfa0e24471e599958595125"
+    "revision": "7e6e4011b7fbab31e024f168b887b743"
   },
   {
     "url": "images/icons/icon-96x96.png",
-    "revision": "7ac6c50c6b31d1857ab3320afb3af57b"
+    "revision": "7444e204668bafdf83be81ebfea66fba"
   },
   {
     "url": "images/ring.jpg",
-    "revision": "474c0241fa01aae6321916180cb78179"
+    "revision": "069ec2d54ece65c660ce9b70d2a556ec"
   },
   {
     "url": "index.html",
-    "revision": "0ddfe65268561cb633c1ecb6c7ca42f7"
+    "revision": "a6c1ddfa1b74e913599040b0513a1fe1"
   },
   {
     "url": "js/app.js",
-    "revision": "6a9f9136982c899356918fedde0e8397"
+    "revision": "eb6cb70c7758f9d5d70bd48a2d8160a1"
   },
   {
     "url": "js/vue.min.js",
-    "revision": "baa2f3e9801a1924119f400d8046e56a"
+    "revision": "47220dbcb227dd1b39a1013bafc03a1c"
   },
   {
     "url": "js/vue2-filters.min.js",
