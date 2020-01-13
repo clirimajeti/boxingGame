@@ -35,7 +35,7 @@
                 <div class="details">
                     <span id="dmg">{{ dmg == 0 ? 'miss' :dmg + ' dmg' }} </span>
                     <span id="count"> {{ count + " hits"}} </span>
-                    <span id="time">{{ time/10 + " s" }}</span>
+                    <span id="time">{{ timeOfPunches/10 + " s" }}</span>
                 </div>
                 <div id="controlls">
                     <button v-if="ended" v-on:click="submitScore" v-bind:disabled="!score_name">Submit your score</button>
