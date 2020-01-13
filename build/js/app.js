@@ -31,14 +31,16 @@ new Vue({
         submitScore: function(){
           //Id generator
             this.id = Math.random().toString(36).substr(2, 9);
-
-          //Pushing data into Firestore
+          if ((this.time / 10) > 3) {
+            //Pushing data into Firestore
             db.collection("highscore").add({
-                "_id":this.id,
-                "name":this.score_name,
-                "time":this.time / 10,
-                "punches":this.count
-            });
+              "_id":this.id,
+              "name":this.score_name,
+              "time":this.time / 10,
+              "punches":this.count
+          });
+          }
+          
 
           //Reseting all values to default
             this.restart();
@@ -85,12 +87,6 @@ new Vue({
               
         }
     },
-    computed: {
-      // uniqueScore: function() {
-      //   return [...new Set(this.highscore.map(p => {p._id;p.name;p.time;p.punches}))];
-        
-      //   },
-     },
     created: function(){
         this.getData()
     }
