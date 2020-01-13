@@ -18,7 +18,7 @@ new Vue({
         ended: false,
         dmg: 0,
         count: 0,
-        time: 0,
+        timeOfPunches: 0,
         interval: null,
         start: false,
         score:null,
@@ -31,12 +31,12 @@ new Vue({
         submitScore: function(){
           //Id generator
             this.id = Math.random().toString(36).substr(2, 9);
-          if ((this.time / 10) > 3) {
+          if ((this.timeOfPunches / 10) > 3) {
             //Pushing data into Firestore
             db.collection("highscore").add({
               "_id":this.id,
               "name":this.score_name,
-              "time":this.time / 10,
+              "time":this.timeOfPunches / 10,
               "punches":this.count
           });
           }
@@ -47,7 +47,6 @@ new Vue({
             
         },
         punch: function(){
-          console.log(this.highscore);
             if(this.start == false){
                 this.toggleTimer();
                 this.start = true;
@@ -66,7 +65,7 @@ new Vue({
             this.health = 100;
             this.count = 0;
             this.ended = false;
-            this.time = 0;
+            this.timeOfPunches = 0;
             this.start = false;
             this.score_name = "";
         },
@@ -74,7 +73,7 @@ new Vue({
               this.interval = setInterval(this.incrementTime, 100);
           },
         incrementTime: function() {
-            this.time = parseInt(this.time) + 1;
+            this.timeOfPunches = parseInt(this.timeOfPunches) + 1;
           },
         getData: function(){
             let vm = this;
